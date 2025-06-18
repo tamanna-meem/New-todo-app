@@ -5,6 +5,8 @@ import AddTodoForm from '@/components/AddTodoForm';
 import TodoItem from '@/components/TodoItem';
 
 export default function Home() {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  type Todo = any;
   const [todos, setTodos] = useState<Todo[]>([]);
 
   useEffect(() => {
